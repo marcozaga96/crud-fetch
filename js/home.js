@@ -22,7 +22,7 @@ fetch("https://striveschool-api.herokuapp.com/api/product/", {
     <h5 class="card-title">${element.name}</h5>
     <p class="card-text">${element.description}.</p>
     <p class="card-text">€ ${element.price}</p>
-    <a href="/details.html" class="btn btn-primary">Dettagli</a>
+    <a href="/details.html?id=${element._id}" class="btn btn-primary">Dettagli</a>
   </div>
 </div>`;
     });
